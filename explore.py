@@ -45,3 +45,11 @@ print("=" * 30) #Spacer
 print("---Exercise 8---")
 
 df.to_csv('data/explored.csv', index=False)
+
+#Reflection Questions:
+#1. Without looking at your code, can you explain what a boolean filter does in plain English?
+# A boolean filter is a way to select rows from a DataFrame based on a condition. It returns a new DataFrame containing only the rows where the condition is True.
+#2. What is the difference between df["revenue"] and df[["revenue"]]? When does the distinction matter?
+# df["revenue"] returns a Series (1D array) of the revenue column, while df[["revenue"]] returns a DataFrame (2D array) with one column. The distinction matters when you want to maintain the DataFrame structure for further operations or when you need to pass a DataFrame to functions that expect a 2D input.
+#3.  If a colleague who only knows Excel asked you to explain why you would choose pandas for this task, what is the single most compelling reason you would give?
+# The most compelling reason to choose pandas over Excel is its ability to handle large datasets efficiently and perform complex data manipulations and analyses programmatically, which can save time and reduce errors compared to manual operations in Excel.
